@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div id="top_part_nav" class="flexed">
+                <div id="pet_shelt" class="flexed">
+                    <img id="heart" src="./heart-light.png" alt="heart">
+                    <h1>Pet Shelter</h1>
+                </div>
+                <div id="links" class="flexed">
+                    <h2>Find a Pet</h2>
+                    <h2>About</h2>
+                    <button onclick="remove(this)" id="donate_button">Donate</button>
+                </div>
+            </div>
+            <div id="information">
+                <div id="direction_text">
+                    <h3>I'm looking for a...</h3>
+                    <h3>in or near...</h3>
+                </div>
+                <div id="selection_part_nav" class="flexed">
+                    <div id="select_pet" class="flexed">
+                        <img src="./paw-light.png" alt="dog_paw" class="icon_size">
+                        <select id="selection" onchange="choose1(this)" name="Any pet" class="option_city">
+                            <option value="Any Pet">Any Pet</option>
+                            <option value="1">Dog</option>
+                            <option value="2">Cat</option>
+                            <option value="3">Mouse</option>
+                        </select>
+                    </div>
+                    <div id="address" class="flexed">
+                        <img src="./pin-light.png" alt="locater" class="icon_size">
+                        <input class="option_city" type="text" placeholder="City or Zip Code">
+                    </div>
+                    <button id="best_friend"> Find your new best friend</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="pet">
+                <div id="pepper" class="flexed spacing">
+                    <div class="photo_text">
+                        <img class="animal_pics" src="./pepper.jpg" alt="cat_pic">
+                        <div class="description">
+                            <h1>Pepper</h1>
+                            <h3>Pepper is a slightly shy grey tabby, but she
+                                really loves showing her human affection.
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="clicks">
+                        <p id="pet1">3 petting(s)</p>
+                        <button onclick="add()" class="pet_button">Pet pepper</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pet">
+                <div id="bruce" class="flexed spacing">
+                    <div class="photo_text">
+                        <img class="animal_pics" src="./bruce.jpg" alt="dog_pic">
+                        <div class="description">
+                            <h1>Bruce</h1>
+                            <h3>Bruce is a loyal companion. He loves long <br>
+                                walks and cold weather.
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="clicks">
+                        <p id="pet2">5 petting(s)</p>
+                        <button onclick="add2()" class="pet_button">Pet Bruce</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pet">
+                <div id="oscar" class="flexed spacing">
+                    <div class="photo_text">
+                        <img class="animal_pics" src="./oscar.jpg" alt="dog_pic">
+                        <div class="description">
+                            <h1>Oscar</h1>
+                            <h3>Oscar is bright, energetic and friendly. He is
+                                looking for a good home.
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="clicks">
+                        <p id="pet3">8 petting(s)</p>
+                        <button onclick="add3()" class="pet_button">Pet Oscar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./java_script.js"></script>
+</body>
+</html>
